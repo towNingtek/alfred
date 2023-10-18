@@ -1,5 +1,6 @@
 import flask
 from flask import request
+from flask_cors import CORS
 import dotenv
 import json
 import os
@@ -8,6 +9,8 @@ from pkg.iota import IOTA
 from utils.code import hex_to_string, str_to_hex
 
 app = flask.Flask(__name__)
+CORS(app)
+
 if os.path.exists('.env'):
     dotenv.load_dotenv('.env')
 
@@ -55,6 +58,7 @@ def data_block_read():
     status = 200,
     mimetype = "application/json"
   )
+
   return response
 
 if __name__ == "__main__":

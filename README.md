@@ -3,6 +3,9 @@ Ethereum and IOTA Compatible API Service.
 
 alfred is a versatile API service designed to provide seamless compatibility with both the Ethereum and IOTA networks. This service allows developers to access and interact with these two prominent blockchain ecosystems using a single API.
 
+## Install
+pip3 install -r requirements.txt
+
 ## Features
 Ethereum Integration: Interact with the Ethereum network using a range of functionalities, including smart contract deployment, transaction monitoring, and more.
 
@@ -16,3 +19,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 If you encounter any issues or have questions, feel free to reach out to us at yillkid<at>gamil.com.
 
+## APIs
+/iota/info
+/iota/message
+/iota/message/?messageID=<messageID>
+
+## Reference
+- [IOTA Node wiki](https://wiki.iota.org/build/networks-endpoints/#iota-mainnet)
+- [IOTA Tangle Explorer](https://explorer.iota.org/)

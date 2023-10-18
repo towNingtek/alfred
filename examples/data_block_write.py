@@ -1,4 +1,4 @@
 import requests
 
-r = requests.post("http://127.0.0.1:1234/iota/message", json={"message": "value"})
+r = requests.post("https://alfred.townway.com.tw/iota/message", json={"message": "hello"})
 print(r.text)
